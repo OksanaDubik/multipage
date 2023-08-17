@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='css/style.css'>
+
+</head>
+<body>
+<div class="wrapper">
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a href="./" class="logo ">
+                    <img src="images/header/logo.svg" alt="logo" class="logo__img" width="125">
+                </a>
+                <nav class="menu">
+                    <button class="menu__btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <ul class="menu__list">
+                        <li class="menu__list-item"><a href="newProduct.html" class="menu__list-link">Твой стиль</a></li>
+                        <li class="menu__list-item"><a href="workProcesses.html" class="menu__list-link">ЧАВО</a></li>
+                        <li class="menu__list-item"><a href="examples.html" class="menu__list-link">Нам доверяют</a>
+                        </li>
+
+                        <li class="menu__list-item"><a href="1956.php" class="menu__list-link">Заказать</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <h2 class="work__text__title form__title">Свяжитесь с нами</h2>
+
+
+    <form action="#" id="form" class="form__body" method="post" target="_blank" name="f1" enctype="multipart/form-data">
+        <!--        Имя/Email-->
+        <div class="form__item">
+            <label for="forName" class="form__label">Имя</label>
+            <input id="forName" type="text" placeholder="Ваше имя" name="name" class="form__input" required="">
+            <label for="forEmail" class="form__label">Email</label>
+            <input id="forEmail" type="email" placeholder="Ваш email" name="email" class="form__input"
+                   required="required">
+        </div>
+        <!--        Что будем украшать?-->
+        <div class="idea">
+            <div class="form__item">
+                <h2 class="work__text__title form__label">Что будем украшать?</h2>
+                <label></label>
+                <select name="choice" class="form__input">
+                    <option value="Куртку/Толстовку">Куртку/Толстовку</option>
+                    <option value="Брюки" selected>Брюки</option>
+                    <option value="Сумку/Рюкзак">Сумку/Рюкзак</option>
+                    <option value="Блузку/Рубашку/Футболку">Блузку/Рубашку/Футболку</option>
+                    <option value="Другое">Другое</option>
+                </select>
+            </div>
+            <!--        Есть идея?-->
+
+            <div class="form__item">
+                <h2 class="work__text__title form__label">Есть идея?</h2>
+                <div class=" options">
+                    <div>
+                        <label for="haveIdea" class="options__label">Есть идея, свой эскиз</label>
+                        <input id="haveIdea" type="radio" name="sketch" class="options__input" value="haveIdea"
+                               checked>
+                    </div>
+                    <div>
+                        <label for="noIdea" class="options__label">Нет идеи, эскиз мастера</label>
+                        <input id="noIdea" type="radio" name="sketch" value="noIdea">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!--        Мой эскиз-->
+        <div class="form__item">
+            <h2 class="work__text__title form__label">Мой эскиз</h2>
+            <div class="file">
+                <div class="file__item">
+                    <input id="formImage" type="file" name="image" class="file__input" multiple="multiple"
+                           accept=".jpg, .jpeg, .png, .pdf">
+                    <button type="button" class="file__btn">Выбрать</button>
+                </div>
+                <div id="formPreview" class="file__preview"></div>
+            </div>
+        </div>
+
+
+        <!--        textarea-->
+        <div class="form__textarea">
+            <label for="formMessage" class="form__message">Дополнительно</label>
+            <textarea id="formMessage" name="message" class="form__input"></textarea>
+        </div>
+
+        <!--        согласие на обработку-->
+        <div class="form__item">
+            <div class="checkbox">
+                <input id="formAgreement" checked type="checkbox" name="agreement" class="checkbox__input _req">
+                <label for="formAgreement" class="checkbox__label"><span>Я даю согласие на обработку моих персональных данных</span></label>
+            </div>
+        </div>
+
+        <button type="submit" class="form__btn">Заказать</button>
+
+    </form>
+
+
+    <footer class="footer">
+        <div class="container">
+            <nav class="footer__menu">
+                <ul class="footer__menu-list">
+                    <li class="footer__menu-item"><p class="footer__menu-title">Продукты</p></li>
+                    <li class="footer__menu-item"><a href="examples.html" class="footer__menu-link">Наши работы</a>
+                    </li>
+                    <li class="footer__menu-item"><a href="workProcesses.html" class="footer__menu-link">Советы</a>
+                    </li>
+                    <li class="footer__menu-item"><a href="newProduct.html" class="footer__menu-link">Подарки для самых близких</a>
+                    </li>
+                </ul>
+                <ul class="footer__menu-list">
+                    <li class="footer__menu-item"><p class="footer__menu-title">Ресурсы </p></li>
+                    <li class="footer__menu-item"><a href="workProcesses.html" class="footer__menu-link">Блог</a>
+                    </li>
+
+                    <li class="footer__menu-item"><a
+                            href="mailto:oksana170773@gmail.com?subject=Заказать рисунок на одежде"
+                            class="footer__menu-link">Связаться с нами по электронной почте</a></li>
+                </ul>
+                <ul class="footer__menu-list">
+                    <li class="footer__menu-item"><p class="footer__menu-title">Нам доверяют</p></li>
+                    <li class="footer__menu-item"><a href="examples.html" class="footer__menu-link">Отзывы</a></li>
+                    <li class="footer__menu-item"><a href="#" class="footer__menu-link"></a></li>
+                    <li class="footer__menu-item"><a href="#" class="footer__menu-link"></a></li>
+                </ul>
+                <ul class="footer__menu-list">
+                    <li class="footer__menu-item"><p class="footer__menu-title">О нас</p></li>
+                    <li class="footer__menu-item"><a href="#" class="footer__menu-link">Мы в соцсетях</a></li>
+                </ul>
+            </nav>
+            <div class="footer__copy">
+                <p class="footer__copy-text">По вопросам, связанным с заказами, звоните
+                    по телефону 1-888-878-3227.
+                </p>
+                <p class="footer__copy-text">Мы не занимаемся продажей или арендой
+                    одежды. Все работы подлежат предварительному согласованию с заказчиком.
+                </p>
+            </div>
+
+            <nav class="copy__nav">
+                <ul class="copy__nav-list">
+                    <li class="copy__nav-item"><a href="#" class="copy__nav-link"> &#169; Данный сайт является
+                        интеллектуальной собственностью</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+</div>
+
+
+<script src="form.js"></script>
+</body>
+</html>
